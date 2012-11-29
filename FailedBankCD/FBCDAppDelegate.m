@@ -32,7 +32,7 @@
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     FBCDMasterViewController *controller = (FBCDMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
-    /*
+    
     NSManagedObjectContext *context = [self managedObjectContext];
     FailedBankInfo *failedBankInfo = [NSEntityDescription
                                       insertNewObjectForEntityForName:@"FailedBankInfo"
@@ -52,7 +52,7 @@
     if (![context save:&error]) {
         NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
     }
-    */
+    
     
     
     //测试从数据库读取数据
